@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+     <title>Flexbox</title>
+  </head>
+  <body>
+    <p class="wayup">WAYUP /</p>
+    <h1 class="руководство">РУКОВОДСТВО ПО FLEXBOX CSS</h1>
+<p class="поперечноеначало">ПОПЕРЕЧНОЕ НАЧАЛО</p>
+
+
+
+<div class="block1">
+    <div class="innertext"><strong> ГЛАВНАЯ (ГОРИЗОНТ.) ОСЬ 🠒</strong> </div>
+    
+<div class="card1"><p class="element">FLEX-ЭЛЕМЕНТ</p></div>
+<div class="card2"><p class="element">FLEX-ЭЛЕМЕНТ</p></div>
+<div class="card3"><p class="element">FLEX-ЭЛЕМЕНТ</p></div>
+
+
+
+
+
+
+
+
+</div>
+<div class="p1"><strong> ГЛАВНОЕ НАЧАЛО</strong></div>
+<div class="p2"><strong> ПОПЕРЕЧНЫЙ КОНЕЦ</strong></div>
+<div class="line"></div>    
+<div class="line2"></div>
+    <header>Свойства flex-контейнера</header>
+    <main>
+      
+      <div class="block">
+        <div class="description">
+          <div class="number">1</div>
+          <div class="text_block">
+            <div class="title">display: flex</div>
+            <div class="webkit">display: -webkit-flex;</div>
+            <div class="name">
+              <span>Назначение: </span>запуск механизма Flexbox
+            </div>
+            <div class="meaning">
+              <span>Возможные значения: </span>flex / inline-flex
+            </div>
+          </div>
+        </div>
+        <div class="example">
+          <div class="block_text">
+            <div class="flex_block">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+            <div class="example_text">flex</div>
+          </div>
+          <div class="block_text_inline">
+            <div class="flex_block">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+            <div class="example_text">inline-flex</div>
+          </div>
+        </div>
+      </div>
+      <div class="block_row">
+        <div class="description_row">
+          <div class="number">2</div>
+          <div class="text_block">
+            <div class="title">flex-direction: row;</div>
+            <div class="webkit">-webkit-flex-direction: row;</div>
+            <div class="name">
+              <span>Назначение: </span>направление укладки элементов по осям
+            </div>
+            <div class="meaning">
+              <span>Возможные значения: </span>row / row-reverse / column /
+              column-reverse
+            </div>
+          </div>
+        </div>
+        <div class="example">
+          <div class="block_text">
+            <div class="flex_block">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+            <div class="example_text">row</div>
+          </div>
+          <div class="block_text_inline">
+            <div class="row_block">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+            <div class="example_text">row-reverse</div>
+          </div>
+        </div>
+        <div class="example">
+          <div class="block_text">
+            <div class="column_block">
+              <div class="column_box"></div>
+              <div class="column_box"></div>
+              <div class="column_box"></div>
+            </div>
+            <div class="example_text">column</div>
+          </div>
+          <div class="block_text_inline">
+            <div class="column_block">
+              <div class="column_box"></div>
+              <div class="column_box"></div>
+              <div class="column_box"></div>
+            </div>
+            <div class="example_text">column-reverse</div>
+          </div>
+        </div>
+      </div>
+      <div class="block_wrap">
+        <div class="description_row">
+          <div class="number">3</div>
+          <div class="text_block">
+            <div class="title">flex-wrap: nowrap;</div>
+            <div class="webkit">-webkit-flex-wrap: nowrap;</div>
+            <div class="name">
+              <span>Назначение: </span>направление элементов в одну или
+              несколько строк
+            </div>
+            <div class="meaning">
+              <span>Возможные значения: </span>nowrap / wrap / wrap-reverse
+            </div>
+          </div>
+        </div>
+        <div class="example">
+          <div class="block_text">
+            <div class="nowrap_block">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+            <div class="example_text">nowrap</div>
+          </div>
+          <div class="block_text">
+            <div class="wrap_block">
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+            </div>
+            <div class="wrap_text fonts-default">wrap</div>
+          </div>
+        </div>
+        <div class="example">
+          <div class="block_text">
+            <div class="wrap-reverse_block">
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+              <div class="wrap_box"></div>
+            </div>
+            <div class="wrap-reverse_text fonts-default">wrap-reverse</div>
+          </div>
+        </div>
+      </div>
+      <div class="block_flow">
+        <div class="description_flow">
+          <div class="number">4</div>
+          <div class="text_block">
+            <div class="title">flex-flow: row nowrap</div>
+            <div class="webkit">-webkit-flex-flow: row nowrap</div>
+            <div class="name">
+              <span>Назначение: </span>сокращенная запись для свойств для
+              flex-direction и flex-wrap
+            </div>
+            <div class="meaning">
+              <span>Возможные значения: </span>см. свойства 2 и 3
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block_justify">
+        <div class="description_justify">
+          <div class="number">5</div>
+          <div class="text_block">
+            <div class="title">justify-content: flex-start;</div>
+            <div class="webkit">-webkit-justify-content: flex-start;</div>
+            <div class="name">
+              <span>Назначение: </span>выравнивание flex-элементов по главной
+              оси текущей строки
+            </div>
+            <div class="meaning">
+              <span>Возможные значения: </span>flex-start / flex-end / center /
+              space-between / space-around
+            </div>
+          </div>
+        </div>
+        <div class="example">
+          <div class="block_text">
+            <div class="flex_block">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+            <div class="example_text">flex-start</div>
+          </div>
+          <div class="block_text_inline">
+            <div class="row_block">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+            <div class="example_text">flex-end</div>
+          </div>
+        </div>
+        <div class="example_center">
+          <div class="block_center">
+            <div class="center_block">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+            <div class="example_text">center</div>
+          </div>
+          <div class="block_between">
+            <div class="between_block">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+            <div class="between_text">space-between</div>
+          </div>
+        </div>
+        <div class="block_around">
+          <div class="around_block">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+          <div class="example_text">space-around</div>
+        </div>
+      </div>
+      <div class="block_align">
+        <div class="description_align">
+          <div class="number">6</div>
+          <div class="text_block">
+            <div class="title">align-items: stretch;</div>
+            <div class="webkit">-webkit-align-items: stretch;</div>
+            <div class="name">
+              <span>Назначение: </span>выравнивание flex-элементов вдоль
+              поперечной оси
+            </div>
+            <div class="meaning">
+              <span>Возможные значения: </span>stretch / flex-start / flex-end /
+              center / baseline
+            </div>
+          </div>
+        </div>
+        <div class="example">
+          <div class="block_text">
+            <div class="flex_block">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+            <div class="example_text">stretch</div>
+          </div>
+          <div class="block_text_inline">
+            <div class="flex-start_block">
+              <div class="flex-end_box"></div>
+              <div class="flex-end_box"></div>
+              <div class="flex-end_box"></div>
+            </div>
+            <div class="example_text">flex-start</div>
+          </div>
+        </div>
+        <div class="example_transform">
+          <div class="block_center">
+            <div class="flex-end_block">
+              <div class="flex-end_box"></div>
+              <div class="flex-end_box"></div>
+              <div class="flex-end_box"></div>
+            </div>
+            <div class="example_text">flex-end</div>
+          </div>
+          <div class="block_between">
+            <div class="align-center_block">
+              <div class="flex-end_box"></div>
+              <div class="flex-end_box"></div>
+              <div class="flex-end_box"></div>
+            </div>
+            <div class="between_text">center</div>
+          </div>
+        </div>
+        <div class="block_transform">
+          <div class="baseline_block">
+            <div class="baseline_box"></div>
+            <div class="medium_box"></div>
+            <div class="align-self_box"></div>
+            <div class="wrap-like_box"></div>
+          </div>
+          <div class="example_text">baseline</div>
+        </div>
+      </div>
+      <div class="block_content">
+        <div class="description_content">
+          <div class="number">7</div>
+          <div class="text_block">
+            <div class="title">align-content: stretch;</div>
+            <div class="webkit">-webkit-align-content: stretch;</div>
+            <div class="name">
+              <span>Назначение: </span>выравнивание строк flex-элементов вдоль
+              поперечной оси
+            </div>
+            <div class="meaning">
+              <span>Возможные значения: </span>stretch / flex-start / flex-end /
+              center / space-between / space-around
+            </div>
+          </div>
+        </div>
+        <div class="example_transformation">
+          <div class="block_text">
+            <div class="stretch_block">
+              <div class="three_blocks">
+                <div class="small_box"></div>
+                <div class="small_box"></div>
+                <div class="small_box"></div>
+              </div>
+              <div class="three_blocks">
+                <div class="small_box"></div>
+                <div class="small_box"></div>
+                <div class="small_box"></div>
+              </div>
+              <div class="three_blocks">
+                <div class="small_box"></div>
+                <div class="small_box"></div>
+                <div class="small_box"></div>
+              </div>
+            </div>
+            <div class="example_text">stretch</div>
+          </div>
+          <div class="block_text_inline">
+            <div class="content-start_block">
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+            </div>
+            <div class="example_text">flex-start</div>
+          </div>
+        </div>
+        <div class="example_transformation2">
+          <div class="block_center">
+            <div class="content-end_block">
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+            </div>
+            <div class="example_text">flex-end</div>
+          </div>
+          <div class="block_between">
+            <div class="content-center_block">
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+            </div>
+            <div class="between_text">center</div>
+          </div>
+        </div>
+        <div class="example_transformation3">
+          <div class="block_center">
+            <div class="content-between_block">
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+            </div>
+            <div class="example_text">space-between</div>
+          </div>
+          <div class="block_between">
+            <div class="content-around_block">
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+              <div class="small_box"></div>
+            </div>
+            <div class="between_text">space-around</div>
+          </div>
+        </div>
+      </div>
+      <div class="header_2">Свойства flex-элемента</div>
+      <div class="block_order">
+        <div class="description_order">
+          <div class="number">1</div>
+          <div class="text_block">
+            <div class="title">order: 0;</div>
+            <div class="webkit">-webkit-order: 0;</div>
+            <div class="name">
+              <span>Назначение: </span>определение порядка расстановки
+              flex-элементов
+            </div>
+            <div class="meaning">
+              <span>Возможные значения: </span>(целое число)
+            </div>
+          </div>
+        </div>
+        <div class="block_relative">
+          <div class="order_block">
+            <div class="order_box">3</div>
+            <div class="order_box">1</div>
+            <div class="order_box">4</div>
+            <div class="order_box">2</div>
+            <div class="order_box">5</div>
+          </div>
+          <div class="absolute-text or0">order: 0;</div>
+          <div class="absolute-text or1">order: 1;</div>
+          <div class="absolute-text or-1">order: -1;</div>
+          <div class="absolute-text or-0">order: 0;</div>
+          <div class="absolute-text or2">order: 2;</div>
+        </div>
+      </div>
+      <div class="block_grow">
+        <div class="description_grow">
+          <div class="number">2</div>
+          <div class="text_block">
+            <div class="title">flex-grow: 0;</div>
+            <div class="webkit">-webkit-flex-grow: 0;</div>
+            <div class="name">
+              <span>Назначение: </span>указывает фактор растягивания
+              flex-элемента
+            </div>
+            <div class="meaning">
+              <span>Возможные значения: </span>(целое неотрицательное число)
+            </div>
+          </div>
+        </div>
+        <div class="block_relative">
+          <div class="order_block">
+            <div class="order_box">1</div>
+            <div class="order_box">2</div>
+            <div class="order_box">3</div>
+            <div class="order_box">4</div>
+            <div class="order_box">5</div>
+          </div>
+          <div class="absolute-text gr1">flex-grow: 1;</div>
+        </div>
+        <div class="block_relative-trans">
+          <div class="order_block">
+            <div class="order_box">1</div>
+            <div class="order_box">2</div>
+            <div class="big_box">3</div>
+            <div class="order_box">4</div>
+            <div class="order_box">5</div>
+          </div>
+          <div class="absolute-text gr1">flex-grow: 3;</div>
+        </div>
+      </div>
+      <div class="block_grow">
+        <div class="description_grow">
+          <div class="number">3</div>
+          <div class="text_block">
+            <div class="title">flex-shrink: 1;</div>
+            <div class="webkit">-webkit-flex-shrink: 1;</div>
+            <div class="name">
+              <span>Назначение: </span>указывает фактор растягивания
+              flex-элемента
+            </div>
+            <div class="meaning">
+              <span>Возможные значения: </span>(целое неотрицательное число)
+            </div>
+          </div>
+        </div>
+        <div class="block_relative">
+          <div class="order_block">
+            <div class="order_box">1</div>
+            <div class="order_box">2</div>
+            <div class="order_box">3</div>
+            <div class="order_box">4</div>
+            <div class="order_box">5</div>
+          </div>
+          <div class="absolute-text gr1">flex-shrink: 1;</div>
+        </div>
+        <div class="block_relative-trans">
+          <div class="order_block">
+            <div class="order_box">1</div>
+            <div class="big_box">2</div>
+            <div class="order_box">3</div>
+            <div class="order_box">4</div>
+            <div class="order_box">5</div>
+          </div>
+          <div class="absolute-text gr1">flex-basis: auto;</div>
+        </div>
+      </div>
+      <div class="block_grow">
+        <div class="description_basis">
+          <div class="number">4</div>
+          <div class="text_block">
+            <div class="title">flex-basis: 1;</div>
+            <div class="webkit">-webkit-flex-basis: auto;</div>
+            <div class="name">
+              <span>Назначение: </span>указывает исходный главный размер
+              flex-элемента
+            </div>
+            <div class="meaning">
+              <span>Возможные значения: </span>длина элемента в пикселях (к
+              примеру, 240px)
+            </div>
+          </div>
+        </div>
+        <div class="block_relative-transf">
+          <div class="order_block">
+            <div class="order_box">1</div>
+            <div class="order_box">2</div>
+            <div class="order_box">3</div>
+            <div class="order_box">4</div>
+            <div class="order_box">5</div>
+          </div>
+          <div class="absolute-text gr1">flex-base: auto;</div>
+        </div>
+        <div class="block_relative-transfo">
+          <div class="order_block">
+            <div class="order_box">1</div>
+            <div class="big_box">2</div>
+            <div class="order_box">3</div>
+            <div class="order_box">4</div>
+            <div class="order_box">5</div>
+          </div>
+          <div class="absolute-text gr1">flex-base: 240px;</div>
+        </div>
+      </div>
+      <div class="description_flex">
+        <div class="number">5</div>
+        <div class="text_block">
+          <div class="title">flex: 0 1 auto;</div>
+          <div class="webkit">-webkit-flex: 0 1 auto;</div>
+          <div class="name">
+            <span>Назначение: </span>сокращенная запись для свойств flex-grow,
+            flex-shrink и flex-basis
+          </div>
+          <div class="meaning">
+            <span>Возможные значения: </span>см. свойства 2, 3 и 4
+          </div>
+        </div>
+      </div>
+      <div class="block_self">
+        <div class="description_self">
+          <div class="number">6</div>
+          <div class="text_block">
+            <div class="title">align-self: auto;</div>
+            <div class="webkit">-webkit-align-self: auto;</div>
+            <div class="name">
+              <span>Назначение: </span>переопределяет выравнивание элемента по
+              умолчанию
+            </div>
+            <div class="meaning">
+              <span>Возможные значения: </span> auto / flex-start / flex-end /
+              center / baseline / stretch
+            </div>
+          </div>
+        </div>
+        <div class="block_relative">
+          <div class="order_block">
+            <div class="order_box"></div>
+            <div class="order_box"></div>
+            <div class="end_box"></div>
+            <div class="self_box"></div>
+            <div class="order_box"></div>
+          </div>
+          <div class="absolute-text as">align-self: flex-start;</div>
+          <div class="absolute-text as2">align-self: flex-end;</div>
+        </div>
+      </div>
+      <div class="header_3">Спасибо за работу!</div>
+      <div class="end">
+        <img src="34.png" alt="картинка не найдена" />
+        <div class="end_text">
+          <p class="end_title">Ибрагимов Бабур</p>
+          <p class="end_text">
+            https://github.com/joaopauloschuler/neural-api
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
